@@ -1,10 +1,5 @@
-import React from "react"
-
-// export default function Home() {
-//   return <div>Bootcamp</div>
-// }
-
-// export default () => <div>Hey, Bootcamp</div>
+import React from 'react'
+import { Link } from 'gatsby'
 
 const IndexPage = () => {
 
@@ -14,6 +9,8 @@ const IndexPage = () => {
       <h2>
         I'm Rob.
       </h2>
+      <p>Need a developer? <Link to='/contact'>Contact Me</Link> </p>
+
     </div>
   )
 }
