@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f ./.env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -14,13 +14,23 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "acorn": "^7.3.1",
     "gatsby": "^2.22.15",
+    "gatsby-interface": "0.0.168",
     "gatsby-plugin-sass": "^2.3.4",
+    "gatsby-plugin-sharp": "^2.6.11",
+    "gatsby-remark-images": "^3.3.10",
+    "gatsby-remark-relative-images": "^0.3.0",
+    "gatsby-source-contentful": "^2.3.15",
+    "gatsby-source-filesystem": "^2.3.11",
+    "gatsby-transformer-remark": "^2.8.15",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-refresh": "^0.8.3"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "prettier": "2.0.5"
   },
   "repository": {
